@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">HedgehogKindom</string>
+    <string name="select_lvl">Выбирете уровень сложности:</string>
+    <string name="Hard_lvl">HARD</string>
+    <string name="Medium_lvl">MEDIUM</string>
+    <string name="Easy_lvl">EASY</string>
+    <string name="information_about">
+        Приложение создано:\n
+        <i>Городнянской Дарьей</i> в качестве курсовой работы\n
+        На тему:
+        <u>"Реализация простейших математических операций в формате квест-игры на Android"</u>\n
+        Особая благодарность за помощь в оформлении приложения <i>Скарга Ксении</i>\n
+        Вопросы по игре задавать на почту
+        <b>shevik.art@gmail.com</b>\n
+        Приятной игры!</string>
+    <string name="information_title">О приложении</string>
+    <string name="item_selection">Выберите предмет</string>
+    <string name="mathematical_analysis">Математический анализ</string>
+    <string name="linear_algebra">Линейная алгебра</string>
+    <string name="analytic_geometry">Аналитическая геометрия</string>
+    <string name="null_activity">Уровень находится в разработке</string>
+
+</resources>

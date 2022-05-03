@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/image">
+        <file>img/backgrount_button_easy.png</file>
+        <file>img/backgrount_button_hard.png</file>
+        <file>img/backgrount_button_medium.png</file>
+        <file>img/Hedgehog.png</file>
+        <file>img/HedgehogGIF.gif</file>
+        <file>img/information.png</file>
+        <file>img/backgroundsimmetric.png</file>
+    </qresource>
+</RCC>

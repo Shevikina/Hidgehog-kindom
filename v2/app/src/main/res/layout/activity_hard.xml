@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgrount">
+
+    <TextView
+        android:id="@+id/hard_choise"
+        android:layout_width="180dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="184dp"
+        android:background="@android:color/holo_orange_dark"
+        android:text="@string/item_selection"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/mathematical_analysis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mathematical_analysis"
+        app:layout_constraintBottom_toTopOf="@+id/linear_algebra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hard_choise"
+        app:layout_constraintVertical_bias="0.588" />
+
+    <Button
+        android:id="@+id/linear_algebra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/linear_algebra"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/analytic_geometry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/analytic_geometry"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear_algebra"
+        app:layout_constraintVertical_bias="0.17" />
+</android.support.constraint.ConstraintLayout>

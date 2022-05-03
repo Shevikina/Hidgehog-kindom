@@ -1,0 +1,10 @@
+debug/main.o
+debug/hedgehogkindom.o
+debug/mathanalysis1lvl.o
+debug/subject.o
+debug/qrc_image.o
+debug/qrc_math.o
+debug/qrc_style.o
+debug/moc_hedgehogkindom.o
+debug/moc_mathanalysis1lvl.o
+debug/moc_subject.o

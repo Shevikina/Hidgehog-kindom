@@ -1,0 +1,10 @@
+release/main.o
+release/hedgehogkindom.o
+release/mathanalysis1lvl.o
+release/subject.o
+release/qrc_image.o
+release/qrc_math.o
+release/qrc_style.o
+release/moc_hedgehogkindom.o
+release/moc_mathanalysis1lvl.o
+release/moc_subject.o

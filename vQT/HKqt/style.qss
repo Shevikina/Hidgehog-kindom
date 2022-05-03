@@ -1,0 +1,97 @@
+/*HedgehogKindom*/
+
+HedgehogKindom{
+border-image:url(:/img/backFull.png);
+}
+#information{
+border-image:url(:/img/information.png);
+}
+
+#HARD{
+border-image:url(:/img/backgrount_button_hard.png);}
+
+#MEDIUM{
+border-image:url(:/img/backgrount_button_medium.png);}
+
+#EASY{
+border-image:url(:/img/backgrount_button_easy.png);}
+
+#choise{
+font-family: Fixedsys;
+font-size: 25pt;
+}
+
+QMessageBox {
+font-family: Fixedsys;
+font-size: 20pt;
+color:#dfb51d;
+}
+
+/*Subject*/
+
+Subject{
+background-color:qlineargradient(x1:1, y1:0, x2:0, y2:1, stop:0.7 #dfb51d, stop:0.4 #FF9700);
+}
+
+Subject QPushButton{
+font-family: Fixedsys;
+font-size: 20pt;
+color:#fdf5ee;
+
+}
+
+#mathAnalysis{
+background-color:#dfb51d;
+}
+
+#linAlgebra{
+background-color:#e2931f;
+}
+
+#analyticGeo{
+background-color:#FF9700;
+}
+
+#choiseSub {
+font-family: Fixedsys;
+font-size: 25pt;
+}
+
+#back {
+background-color:#fdf5ee;
+color:#dfb51d;
+}
+
+MathAnalysis1lvl, MathAnalysus2lvl, MathAnalysis3lvl{
+background-color:qlineargradient(x1:1, y1:0, x2:1, y2:1, stop:1 #dfb51d, stop:0.2 #ffffee);
+}
+
+#futher{
+color:#dbc639;
+background-color:#ffffee;
+font-family: Fixedsys;
+font-size: 20pt;
+}
+
+#question, QRadioButton, QCheckBox, QLineEdit{
+font-family: Fixedsys;
+font-size: 20pt;
+}
+
+LinAlgebra1lvl, LinAlgebra2lvl, LinAlgebra3lvl{
+background-color:qlineargradient(x1:1, y1:0, x2:1, y2:1, stop:1 #e2931f, stop:0.2 #fffff1);
+}
+
+LinAlgebra1lvl QPushButton, LinAlgebra2lvl QPushButton, LinAlgebra3lvl QPushButton {
+color:#e2931f;
+background-color:#fffff1;
+}
+
+AnalyticGeo1lvl, AnalyticGeo2lvl{
+background-color:qlineargradient(x1:1, y1:0, x2:1, y2:1, stop:1 #FF9700, stop:0.2 #fffcf2);
+}
+
+AnalyticGeo1lvl QPushButton, AnalyticGeo2lvl QPushButton{
+color:#FF9700;
+background-color:#fffcf2;
+}

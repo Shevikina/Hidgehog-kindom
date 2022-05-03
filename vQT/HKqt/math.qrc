@@ -1,0 +1,39 @@
+<RCC>
+    <qresource prefix="/">
+        <file>ma/46.png</file>
+        <file>ma/47.png</file>
+        <file>ma/48.png</file>
+        <file>ma/116.png</file>
+        <file>ma/190.png</file>
+        <file>ma/379.png</file>
+        <file>ma/380.png</file>
+        <file>ma/419.png</file>
+        <file>ma/420.png</file>
+        <file>ma/433.png</file>
+        <file>ma/438.png</file>
+        <file>ma/462.png</file>
+        <file>la/5b.png</file>
+        <file>la/8a.png</file>
+        <file>la/8b.png</file>
+        <file>la/27.png</file>
+        <file>la/29.png</file>
+        <file>la/34a.png</file>
+        <file>la/34b.png</file>
+        <file>la/35a.png</file>
+        <file>la/60c.png</file>
+        <file>la/61e.png</file>
+        <file>la/61i.png</file>
+        <file>la/77b.png</file>
+        <file>la/77c.png</file>
+        <file>la/153.png</file>
+        <file>la/154.png</file>
+        <file>ag/13.png</file>
+        <file>ag/16.png</file>
+        <file>ag/17.png</file>
+        <file>ag/19.png</file>
+        <file>ag/24.png</file>
+        <file>ag/111.png</file>
+        <file>ag/114.png</file>
+        <file>ag/220.png</file>
+    </qresource>
+</RCC>
