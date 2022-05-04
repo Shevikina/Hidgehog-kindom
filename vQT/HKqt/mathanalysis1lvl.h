@@ -3,6 +3,8 @@
 
 #include <QWidget>
 #include <QMap>
+#include <QDebug>
+#include <QButtonGroup>
 #include "mathanalysus2lvl.h"
 
 namespace Ui {
@@ -19,6 +21,7 @@ public:
     MathAnalysus2lvl MA2;
     int getResultMA1();
     int setResultMA2();
+    void setRadioButtonUnchecked();
 
 private slots:
     void on_futher_clicked();
@@ -26,6 +29,7 @@ private slots:
 private:
     Ui::MathAnalysis1lvl *ui;
     QMap<int,bool>resultMA1;
+    QButtonGroup* group = new QButtonGroup();
 };
 
 #endif // MATHANALYSIS1LVL_H

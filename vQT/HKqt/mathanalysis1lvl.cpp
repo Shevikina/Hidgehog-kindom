@@ -1,12 +1,17 @@
 #include "mathanalysis1lvl.h"
 #include "ui_mathanalysis1lvl.h"
-#include <QDebug>
+
 
 MathAnalysis1lvl::MathAnalysis1lvl(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::MathAnalysis1lvl)
 {
     ui->setupUi(this);
+    group->addButton(ui->answer_1);
+    group->addButton(ui->answer_2);
+    group->addButton(ui->answer_3);
+    group->addButton(ui->answer_4);
+    group->addButton(ui->answer_5);
     ui->task->setStyleSheet("image:url(:/ma/379.png)");
     ui->answer_1->setText("x=-0,57; y=-1,26");
     ui->answer_2->setText("x=0,99; y=-0,50");
@@ -34,6 +39,7 @@ void MathAnalysis1lvl::on_futher_clicked()
       if(ui->answer_2->isChecked())
           resultMA1[1]=true;
       else resultMA1[1]=false;
+      setRadioButtonUnchecked();
       ui->task->setStyleSheet("image:url(:/ma/380.png)");
       ui->answer_1->setText("x=-1,30; y=9,91");
       ui->answer_2->setText("x=2,3; y=9,73");
@@ -53,4 +59,14 @@ int MathAnalysis1lvl::getResultMA1(){
 
 int MathAnalysis1lvl::setResultMA2(){
     return MA2.getResultMA2()+MA2.setResultMA3();
+}
+
+void MathAnalysis1lvl::setRadioButtonUnchecked(){
+    QAbstractButton* checked = group->checkedButton();
+    if (checked)
+    {
+        group->setExclusive(false);
+        checked->setChecked(false);
+        group->setExclusive(true);
+    }
 }

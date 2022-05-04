@@ -3,6 +3,7 @@
 #include <QMap>
 #include "linalgebra2lvl.h"
 #include <QWidget>
+#include <QButtonGroup>
 
 namespace Ui {
 class LinAlgebra1lvl;
@@ -18,6 +19,7 @@ public:
     LinAlgebra2lvl LA2;
     int getResultLA1();
     int setResultLA2();
+    void setRadioButtonUnchecked();
 
 private slots:
     void on_futher_clicked();
@@ -25,6 +27,7 @@ private slots:
 private:
     Ui::LinAlgebra1lvl *ui;
     QMap<int,bool> resultLA1;
+    QButtonGroup* group = new QButtonGroup();
 };
 
 #endif // LINALGEBRA1LVL_H

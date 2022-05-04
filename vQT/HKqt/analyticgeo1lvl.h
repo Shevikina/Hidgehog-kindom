@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include <QMap>
+#include <QButtonGroup>
 #include "analyticgeo2lvl.h"
 
 namespace Ui {
@@ -19,6 +20,7 @@ public:
     AnalyticGeo2lvl AG2;
    int getResultAG1();
    int setResultAG2();
+   void setRadioButtonUnchecked();
 
 private slots:
     void on_futher_clicked();
@@ -27,6 +29,7 @@ private:
     Ui::AnalyticGeo1lvl *ui;
     int k=0;
     QMap<int,bool> resultAG1;
+    QButtonGroup* group = new QButtonGroup();
 };
 
 #endif // ANALYTICGEO1LVL_H

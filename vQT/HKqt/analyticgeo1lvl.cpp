@@ -6,6 +6,10 @@ AnalyticGeo1lvl::AnalyticGeo1lvl(QWidget *parent) :
     ui(new Ui::AnalyticGeo1lvl)
 {
     ui->setupUi(this);
+    group->addButton(ui->answer_1);
+    group->addButton(ui->answer_2);
+    group->addButton(ui->answer_3);
+    group->addButton(ui->answer_4);
     ui->task->setStyleSheet("image:url(:/ag/13.png)");
     ui->answer_1->setText("a1=2; a2=3");
     ui->answer_2->setText("a1=4; a2=6");//
@@ -24,6 +28,7 @@ void AnalyticGeo1lvl::on_futher_clicked()
     {if(ui->answer_2->isChecked())
             resultAG1[1]=true;
         else resultAG1[1]=false;
+        setRadioButtonUnchecked();
         ui->task->setStyleSheet("image:url(:/ag/19.png)");
         ui->answer_1->setText("3i");
         ui->answer_2->setText("3j");
@@ -35,23 +40,25 @@ void AnalyticGeo1lvl::on_futher_clicked()
         if(ui->answer_3->isChecked())
                     resultAG1[2]=true;
                 else resultAG1[2]=false;
-                ui->task->setStyleSheet("image:url(:/ag/111.png)");
-                ui->answer_1->setText("-15");
-                ui->answer_2->setText("-20");
-                ui->answer_3->setText("-25");//
-                ui->answer_4->setText("-30");
-                k++;
+        setRadioButtonUnchecked();
+        ui->task->setStyleSheet("image:url(:/ag/111.png)");
+        ui->answer_1->setText("-15");
+        ui->answer_2->setText("-20");
+        ui->answer_3->setText("-25");//
+        ui->answer_4->setText("-30");
+        k++;
     }
     else if(ui->task->styleSheet()=="image:url(:/ag/111.png)"&&k==2){
         if(ui->answer_3->isChecked())
                     resultAG1[3]=true;
                 else resultAG1[3]=false;
-                ui->task->setStyleSheet("image:url(:/ag/220.png)");
-                ui->answer_1->setText("y^2=9x^2");//
-                ui->answer_2->setText("9y^2=x^2");
-                ui->answer_3->setText("y^2=3x^2");
-                ui->answer_4->setText("3y^2=x^2");
-                k++;
+        setRadioButtonUnchecked();
+        ui->task->setStyleSheet("image:url(:/ag/220.png)");
+        ui->answer_1->setText("y^2=9x^2");//
+        ui->answer_2->setText("9y^2=x^2");
+        ui->answer_3->setText("y^2=3x^2");
+        ui->answer_4->setText("3y^2=x^2");
+        k++;
     }
        else{
             if(ui->answer_1->isChecked())
@@ -71,3 +78,14 @@ int AnalyticGeo1lvl::getResultAG1(){
 
 int AnalyticGeo1lvl::setResultAG2(){
     return AG2.getResultAG2();}
+
+void AnalyticGeo1lvl::setRadioButtonUnchecked()
+{
+    QAbstractButton* checked = group->checkedButton();
+    if (checked)
+    {
+        group->setExclusive(false);
+        checked->setChecked(false);
+        group->setExclusive(true);
+    }
+}

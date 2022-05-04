@@ -6,6 +6,7 @@ HedgehogKindom::HedgehogKindom(QWidget *parent)
     , ui(new Ui::HedgehogKindom)
 {
     ui->setupUi(this);
+    //ui->stackedWidget->addWidget(ui->firstWidget);//если добавляю эту строку- просто не открывается окно. Без ошибок, без чего-либо, оно просто не запускаектся
 
 }
 
@@ -34,6 +35,7 @@ void HedgehogKindom::on_information_clicked()
 void HedgehogKindom::on_HARD_clicked()
 {
     level=1;
+    //ui->stackedWidget->addWidget();//как подключить
     s.show();
     this->hide();
 }
