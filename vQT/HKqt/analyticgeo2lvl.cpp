@@ -22,33 +22,29 @@ void AnalyticGeo2lvl::on_futher_clicked()
        else  resultAG2[1]=false;
        ui->answer->clear();
        ui->task->setStyleSheet("image:url(:/ag/17.png)");
-       k++;
     }
-    else if(ui->task->styleSheet()=="image:url(:/ag/17.png)"&&k==1)
+    else if(ui->task->styleSheet()=="image:url(:/ag/17.png)")
     {
         if(ui->answer->text()=="40")
           resultAG2[2]=true;
         else  resultAG2[2]=false;
         ui->answer->clear();
         ui->task->setStyleSheet("image:url(:/ag/114.png)");
-        k++;
     }
-    else if(ui->task->styleSheet()=="image:url(:/ag/114.png)"&&k==2)
+    else if(ui->task->styleSheet()=="image:url(:/ag/114.png)")
     {
         if(ui->answer->text()=="2")
           resultAG2[3]=true;
         else  resultAG2[3]=false;
         ui->answer->clear();
-        ui->task->setStyleSheet("image:url(:/la/24.png)");
-        k++;
+        ui->task->setStyleSheet("image:url(:/ag/24.png)");
+        ui->futher->setText("РЕЗУЛЬТАТ");
     }
     else {
         if(ui->answer->text()=="49")
          resultAG2[4]=true;
         else resultAG2[4]=false;
-        ui->futher->setText("РЕЗУЛЬТАТ");
         this->close();
-        k=0;
     }
 }
 

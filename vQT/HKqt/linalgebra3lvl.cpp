@@ -6,6 +6,7 @@ LinAlgebra3lvl::LinAlgebra3lvl(QWidget *parent) :
     ui(new Ui::LinAlgebra3lvl)
 {
     ui->setupUi(this);
+    ui->futher->setText("ДАЛЕЕ");
     ui->task->setStyleSheet("image:url(:/la/8b.png)");
 }
 
@@ -22,78 +23,69 @@ void LinAlgebra3lvl::on_futher_clicked()
        else resultLA3[1]=false;
        ui->answer->clear();
        ui->task->setStyleSheet("image:url(:/la/34a.png)");
-       k++;
     }
-    else if(ui->task->styleSheet()=="image:url(:/la/34a.png)"&&k==1)
+    else if(ui->task->styleSheet()=="image:url(:/la/34a.png)")
     {
         if(ui->answer->text()=="3")
          resultLA3[2]=true;
         else resultLA3[2]=false;
         ui->answer->clear();
         ui->task->setStyleSheet("image:url(:/la/34b.png)");
-        k++;
     }
-    else if(ui->task->styleSheet()=="image:url(:/la/34b.png)"&&k==2)
+    else if(ui->task->styleSheet()=="image:url(:/la/34b.png)")
     {
         if(ui->answer->text()=="4")
          resultLA3[3]=true;
         else resultLA3[3]=false;
         ui->answer->clear();
         ui->task->setStyleSheet("image:url(:/la/35a.png)");
-        k++;
     }
-    else if(ui->task->styleSheet()=="image:url(:/la/35a.png)"&&k==3)
+    else if(ui->task->styleSheet()=="image:url(:/la/35a.png)")
     {
         if(ui->answer->text()=="2")
          resultLA3[4]=true;
         else resultLA3[4]=false;
         ui->answer->clear();
         ui->task->setStyleSheet("image:url(:/la/60c.png)");
-        k++;
     }
-    else if(ui->task->styleSheet()=="image:url(:/la/60c.png)"&&k==4)
+    else if(ui->task->styleSheet()=="image:url(:/la/60c.png)")
     {
         if(ui->answer->text()=="119")
          resultLA3[5]=true;
         else resultLA3[5]=false;
         ui->answer->clear();
         ui->task->setStyleSheet("image:url(:/la/61e.png)");
-        k++;
     }
-    else if(ui->task->styleSheet()=="image:url(:/la/61e.png)"&&k==5)
+    else if(ui->task->styleSheet()=="image:url(:/la/61e.png)")
     {
         if(ui->answer->text()=="54")
          resultLA3[6]=true;
         else resultLA3[6]=false;
         ui->answer->clear();
         ui->task->setStyleSheet("image:url(:/la/61i.png)");
-        k++;
     }
-    else if(ui->task->styleSheet()=="image:url(:/la/61i.png)"&&k==6)
+    else if(ui->task->styleSheet()=="image:url(:/la/61i.png)")
     {
         if(ui->answer->text()=="4")
          resultLA3[7]=true;
         else resultLA3[7]=false;
         ui->answer->clear();
         ui->task->setStyleSheet("image:url(:/la/153.png)");
-        k++;
     }
-    else if(ui->task->styleSheet()=="image:url(:/la/153.png)"&&k==7)
+    else if(ui->task->styleSheet()=="image:url(:/la/153.png)")
     {
         if(ui->answer->text()=="7")
          resultLA3[8]=true;
         else resultLA3[8]=false;
         ui->answer->clear();
         ui->task->setStyleSheet("image:url(:/la/154.png)");
-        k++;
+        ui->futher->setText("РЕЗУЛЬТАТ");
     }
     else {
         if(ui->answer->text()=="13")
          resultLA3[9]=true;
         else resultLA3[9]=false;
-        ui->futher->setText("РЕЗУЛЬТАТ");
         this->close();
-        k=0;
     }
 }
 

@@ -3,7 +3,7 @@
 
 #include <QMainWindow>
 #include <QMessageBox>
-#include "subject.h"
+#include "subject.h"//подключаем заголовочный файл окна с выбором математической дисциплины
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class HedgehogKindom; }
@@ -16,21 +16,17 @@ class HedgehogKindom : public QMainWindow
 public:
     HedgehogKindom(QWidget *parent = nullptr);
     ~HedgehogKindom();
-    Subject s;
-    int getLevel();
+    Subject s;//объект класса окна с выбором математической дисциплины
 
 private slots:
 
-    void on_information_clicked();
+    void on_information_clicked();//обработка нажатия на кнопку информации
 
-    void on_HARD_clicked();
+    void on_HARD_clicked();//обработка нажатия на кнопку Тяжелой сложности
 
-    void on_MEDIUM_clicked();
-
-    void on_EASY_clicked();
+    void on_MEDIUM_clicked();//обработка нажатия на кнопку Средней сложности
 
 private:
     Ui::HedgehogKindom *ui;
-     int level=0;//0-начСост, 1-hard, 2-medium, 3-easy
 };
 #endif // HEDGEHOGKINDOM_H

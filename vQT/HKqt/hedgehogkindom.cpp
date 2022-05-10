@@ -18,25 +18,27 @@ HedgehogKindom::~HedgehogKindom()
 
 void HedgehogKindom::on_information_clicked()
 {
-    QMessageBox msg;
-    msg.setWindowTitle("О создателе");
-    msg.setWindowIcon(QIcon("url:(:/img/Hedgehog.png)"));
+    QMessageBox msg;//создаю объект класса QMessageBox для создания окна с сообщением
+    msg.setWindowTitle("О создателе");//Задаю заголовок
+    msg.setIconPixmap(QPixmap(":/img/Hedgehog.png"));//Задаю картинку рядом с текстом
+    msg.setWindowIcon(QIcon(":/img/information.png"));//Задаю иконку рядом с заголовком
+    //Задаю тект сообщения:
     msg.setText("Приложение создано:\n"
                 "Городнянской Дарьей в качестве курсовой работы\n"
-                "На тему:\n\"Реализация простейших математических операций в формате квест-игры\"\n"
+                "На тему:\n\"Реализация базовых математических дисциплин в формате квест-игры\"\n"
                 "Особая благодарность за помощь в оформлении приложения Скарга Ксении\n"
                 "Вопросы по игре задавать на почту "
                 "shevik.art@gmail.com\n"
                 "Приятной игры!");
-    msg.exec();
+    msg.exec();//Выполняю окно
 }
 
 
 void HedgehogKindom::on_HARD_clicked()
 {
-    level=1;
     //ui->stackedWidget->addWidget();//как подключить
-    s.show();
+    s.level=1;//передаю выбранный уровень в класс Subject
+    s.show();//перехожу в окно выбора математической дисциплины
     this->hide();
 }
 
@@ -44,18 +46,7 @@ void HedgehogKindom::on_HARD_clicked()
 
 void HedgehogKindom::on_MEDIUM_clicked()
 {
-    level=2;
+    s.level=2;
     s.show();
     this->hide();
 }
-
-
-void HedgehogKindom::on_EASY_clicked()
-{
-    level=3;
-    s.show();
-    this->hide();
-}
-
-int HedgehogKindom::getLevel()
-{return level;}

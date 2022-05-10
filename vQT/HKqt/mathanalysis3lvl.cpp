@@ -29,50 +29,44 @@ void MathAnalysis3lvl::on_futher_clicked()
        else resultMA3[1]=false;
        ui->answer->clear();
        ui->task->setStyleSheet("image:url(:/ma/47.png)");
-       k++;
     }
-    else if(ui->task->styleSheet()=="image:url(:/ma/47.png)"&&k==1)
+    else if(ui->task->styleSheet()=="image:url(:/ma/47.png)")
     {
         if(ui->answer->text()=="0")
          resultMA3[2]=true;
         else resultMA3[2]=false;
         ui->answer->clear();
         ui->task->setStyleSheet("image:url(:/ma/48.png)");
-        k++;
     }
-    else if(ui->task->styleSheet()=="image:url(:/ma/48.png)"&&k==2)
+    else if(ui->task->styleSheet()=="image:url(:/ma/48.png)")
     {
         if(ui->answer->text()=="0")
          resultMA3[3]=true;
         else resultMA3[3]=false;
         ui->answer->clear();
         ui->task->setStyleSheet("image:url(:/ma/420.png)");
-        k++;
     }
-    else if(ui->task->styleSheet()=="image:url(:/ma/420.png)"&&k==3)
+    else if(ui->task->styleSheet()=="image:url(:/ma/420.png)")
     {
         if(ui->answer->text()=="1")
          resultMA3[4]=true;
         else resultMA3[4]=false;
         ui->answer->clear();
         ui->task->setStyleSheet("image:url(:/ma/433.png)");
-        k++;
     }
-    else if(ui->task->styleSheet()=="image:url(:/ma/433.png)"&&k==4)
+    else if(ui->task->styleSheet()=="image:url(:/ma/433.png)")
     {
         if(ui->answer->text()=="3")
          resultMA3[5]=true;
         else resultMA3[5]=false;
         ui->answer->clear();
         ui->task->setStyleSheet("image:url(:/ma/462.png)");
-        k++;
+        ui->futher->setText("РЕЗУЛЬТАТ");
     }
     else {
         if(ui->answer->text()=="2")
          resultMA3[6]=true;
         else resultMA3[6]=false;
-        ui->futher->setText("РЕЗУЛЬТАТ");
-        k=0;
         this->close();
     }
 }

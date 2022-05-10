@@ -22,7 +22,6 @@ private slots:
 
 private:
     Ui::LinAlgebra3lvl *ui;
-    int k=0;
 };
 
 #endif // LINALGEBRA3LVL_H

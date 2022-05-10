@@ -19,6 +19,7 @@ public:
     LinAlgebra3lvl LA3;
     int getResultLA2();
     int setResultLA3();
+    void setCheckBoxUnchecked();//метод для снятия выделения с CheckBox
 
 private slots:
     void on_futher_clicked();
@@ -26,7 +27,6 @@ private slots:
 private:
     Ui::LinAlgebra2lvl *ui;
     QMap<int,bool> resultLA2;
-    int k=0;
 };
 
 #endif // LINALGEBRA2LVL_H
